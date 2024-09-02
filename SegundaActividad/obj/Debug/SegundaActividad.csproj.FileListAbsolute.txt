@@ -1,0 +1,11 @@
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\SegundaActividad.exe.config
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\SegundaActividad.exe
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\SegundaActividad.pdb
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.csproj.AssemblyReference.cache
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.fmrPrincipal.resources
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.Properties.Resources.resources
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.csproj.GenerateResource.cache
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.csproj.CoreCompileInputs.cache
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.exe
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.pdb
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.VentanaDB.resources
