@@ -28,21 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AbrirDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msBarraTarea = new System.Windows.Forms.MenuStrip();
+            this.msBarraTarea.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
             // 
@@ -55,24 +47,48 @@
             // AbrirDBToolStripMenuItem
             // 
             this.AbrirDBToolStripMenuItem.Name = "AbrirDBToolStripMenuItem";
-            this.AbrirDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AbrirDBToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.AbrirDBToolStripMenuItem.Text = "Abrir DB";
             this.AbrirDBToolStripMenuItem.Click += new System.EventHandler(this.AbrirDBToolStripMenuItem_Click);
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            // 
+            // borrarToolStripMenuItem
+            // 
+            this.borrarToolStripMenuItem.Name = "borrarToolStripMenuItem";
+            this.borrarToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.borrarToolStripMenuItem.Text = "Borrar";
+            // 
+            // msBarraTarea
+            // 
+            this.msBarraTarea.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.agregarToolStripMenuItem,
+            this.borrarToolStripMenuItem});
+            this.msBarraTarea.Location = new System.Drawing.Point(0, 0);
+            this.msBarraTarea.Name = "msBarraTarea";
+            this.msBarraTarea.Size = new System.Drawing.Size(800, 24);
+            this.msBarraTarea.TabIndex = 0;
+            this.msBarraTarea.Text = "menuStrip1";
             // 
             // fmrPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.msBarraTarea);
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.msBarraTarea;
             this.Name = "fmrPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "VentanaPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.msBarraTarea.ResumeLayout(false);
+            this.msBarraTarea.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,8 +96,10 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AbrirDBToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem borrarToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip msBarraTarea;
     }
 }

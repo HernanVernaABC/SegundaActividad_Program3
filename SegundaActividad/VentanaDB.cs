@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
+using negocio;
 
 namespace SegundaActividad
 {
@@ -19,7 +21,9 @@ namespace SegundaActividad
 
         private void VentanaDB_Load(object sender, EventArgs e)
         {
-            
+
+            ArticuloNegocio ArtNeg = new ArticuloNegocio();
+            dgvArticulos.DataSource = ArtNeg.listar();
         }
 
         private void lblContenidoDB_Click(object sender, EventArgs e)

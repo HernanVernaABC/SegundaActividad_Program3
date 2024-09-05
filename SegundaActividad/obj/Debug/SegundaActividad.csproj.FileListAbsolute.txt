@@ -9,3 +9,8 @@ C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\Segun
 C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.exe
 C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.pdb
 C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.VentanaDB.resources
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\dominio.dll
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\negocio.dll
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\dominio.pdb
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\negocio.pdb
+C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.csproj.CopyComplete
