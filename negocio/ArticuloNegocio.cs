@@ -18,7 +18,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("Select Codigo, Nombre, A.Descripcion, Precio, M.Descripcion, C.Descripcion from Articulos A, Marcas M, Categorias C");
+                datos.setearConsulta("Select Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio from Articulos");
                 datos.EjecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -27,22 +27,34 @@ namespace negocio
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
-                    aux.Categoria = new Categoria();
-                    {
-                    aux.Categoria.Descripcion = (string)datos.Lector["Descripcion"];
-                    }
-                    aux.Marca = new Marca();
-                    {
-                    aux.Marca.Descripcion = (string)datos.Lector["Descripcion"];
-
-                    }
-
+                    aux.IdCategoria = (int)datos.Lector["IdCategoria"];
+                    aux.IdMarca = (int)datos.Lector["IdMarca"];
                     articulos.Add(aux);
+                }
 
+                CategoriaNegocio auxCategoria = new CategoriaNegocio();
+                List<Categoria> categorias = auxCategoria.listar();
 
+                NegocioMarca auxMarca = new NegocioMarca();
+                List<Marca> marcas = auxMarca.listar();
 
+                foreach (Articulo aux in articulos)
+                {
+                    foreach(Categoria auxCat in categorias)
+                    {
+                        if(aux.IdCategoria == auxCat.IdCategoria)
+                        {
+                            aux.Categoria = auxCat;
+                        }
+                    }
 
-
+                    foreach (Marca auxMarc in marcas)
+                    {
+                        if (aux.IdMarca == auxMarc.idMarca)
+                        {
+                            aux.Marca = auxMarc;
+                        }
+                    }
                 }
 
                 return articulos;
@@ -57,5 +69,6 @@ namespace negocio
                 datos.CerrarConexion();
             }
         }
+
     }
 }

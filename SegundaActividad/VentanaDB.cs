@@ -12,8 +12,10 @@ using negocio;
 
 namespace SegundaActividad
 {
+    
     public partial class VentanaDB : Form
     {
+        private List<Articulo> Articulos;
         public VentanaDB()
         {
             InitializeComponent();
@@ -23,12 +25,14 @@ namespace SegundaActividad
         {
 
             ArticuloNegocio ArtNeg = new ArticuloNegocio();
-            dgvArticulos.DataSource = ArtNeg.listar();
+            
+            Articulos = ArtNeg.listar();
+           
+            dgvArticulos.DataSource = Articulos;
+            dgvArticulos.Columns["IdCategoria"].Visible = false;
+            dgvArticulos.Columns["IdMarca"].Visible = false;
+
         }
 
-        private void lblContenidoDB_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

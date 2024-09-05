@@ -47,5 +47,10 @@ namespace SegundaActividad
                                         // Ventana principal
             ventanaDB.Show(); //Muestra la ventana
         }
+
+        private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

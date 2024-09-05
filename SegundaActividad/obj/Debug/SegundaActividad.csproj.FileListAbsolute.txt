@@ -14,3 +14,19 @@ C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\negoc
 C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\dominio.pdb
 C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\bin\Debug\negocio.pdb
 C:\Users\herna\Desktop\Progm 3\SegundaActividad\SegundaActividad\obj\Debug\SegundaActividad.csproj.CopyComplete
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\SegundaActividad.exe.config
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\SegundaActividad.exe
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\SegundaActividad.pdb
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\dominio.dll
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\negocio.dll
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\dominio.pdb
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\bin\Debug\negocio.pdb
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.fmrPrincipal.resources
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.Properties.Resources.resources
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.VentanaDB.resources
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaA.93534FFC.Up2Date
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.exe
+C:\Users\PC\Desktop\SegundaActividad_Program3-main\SegundaActividad\obj\Debug\SegundaActividad.pdb
