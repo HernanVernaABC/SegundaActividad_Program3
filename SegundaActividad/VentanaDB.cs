@@ -23,16 +23,23 @@ namespace SegundaActividad
 
         private void VentanaDB_Load(object sender, EventArgs e)
         {
+            pnlFondo.Visible = false;
+        }
 
+        private void btnMostrarTodo_Click(object sender, EventArgs e)
+        {
             ArticuloNegocio ArtNeg = new ArticuloNegocio();
-            
+
             Articulos = ArtNeg.listar();
-           
+
             dgvArticulos.DataSource = Articulos;
             dgvArticulos.Columns["IdCategoria"].Visible = false;
             dgvArticulos.Columns["IdMarca"].Visible = false;
-
         }
 
+        private void btnAgregarArticulo_Click(object sender, EventArgs e)
+        {
+            pnlFondo.Visible = true;
+        }
     }
 }

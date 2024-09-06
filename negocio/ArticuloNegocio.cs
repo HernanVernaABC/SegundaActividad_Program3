@@ -70,5 +70,10 @@ namespace negocio
             }
         }
 
+        public int cargarArticulo()
+        {
+            return 0;
+        }
+
     }
 }
