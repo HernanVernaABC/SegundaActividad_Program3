@@ -30,7 +30,7 @@
         {
             this.lblContenidoDB = new System.Windows.Forms.Label();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
-            this.pboProducto = new System.Windows.Forms.PictureBox();
+            this.pbxProducto = new System.Windows.Forms.PictureBox();
             this.btnMostrarTodo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pnlFondo = new System.Windows.Forms.Panel();
@@ -48,7 +48,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProducto)).BeginInit();
             this.pnlFondo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -72,14 +72,16 @@
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.Size = new System.Drawing.Size(874, 207);
             this.dgvArticulos.TabIndex = 1;
+            this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
-            // pboProducto
+            // pbxProducto
             // 
-            this.pboProducto.Location = new System.Drawing.Point(20, 308);
-            this.pboProducto.Name = "pboProducto";
-            this.pboProducto.Size = new System.Drawing.Size(249, 219);
-            this.pboProducto.TabIndex = 2;
-            this.pboProducto.TabStop = false;
+            this.pbxProducto.Location = new System.Drawing.Point(20, 308);
+            this.pbxProducto.Name = "pbxProducto";
+            this.pbxProducto.Size = new System.Drawing.Size(249, 219);
+            this.pbxProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxProducto.TabIndex = 2;
+            this.pbxProducto.TabStop = false;
             // 
             // btnMostrarTodo
             // 
@@ -242,7 +244,7 @@
             this.Controls.Add(this.pnlFondo);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnMostrarTodo);
-            this.Controls.Add(this.pboProducto);
+            this.Controls.Add(this.pbxProducto);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.lblContenidoDB);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -251,7 +253,7 @@
             this.Text = "Base de Datos";
             this.Load += new System.EventHandler(this.VentanaDB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProducto)).EndInit();
             this.pnlFondo.ResumeLayout(false);
             this.pnlFondo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -264,7 +266,7 @@
 
         private System.Windows.Forms.Label lblContenidoDB;
         private System.Windows.Forms.DataGridView dgvArticulos;
-        private System.Windows.Forms.PictureBox pboProducto;
+        private System.Windows.Forms.PictureBox pbxProducto;
         private System.Windows.Forms.Button btnMostrarTodo;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Panel pnlFondo;
