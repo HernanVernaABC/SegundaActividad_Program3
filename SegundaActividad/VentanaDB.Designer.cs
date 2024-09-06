@@ -46,9 +46,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboProducto)).BeginInit();
             this.pnlFondo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblContenidoDB
@@ -103,6 +105,7 @@
             // pnlFondo
             // 
             this.pnlFondo.BackColor = System.Drawing.Color.DarkCyan;
+            this.pnlFondo.Controls.Add(this.pictureBox1);
             this.pnlFondo.Controls.Add(this.textBox4);
             this.pnlFondo.Controls.Add(this.textBox3);
             this.pnlFondo.Controls.Add(this.textBox2);
@@ -223,6 +226,14 @@
             this.textBox4.Size = new System.Drawing.Size(120, 22);
             this.textBox4.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(334, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 136);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // VentanaDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -243,6 +254,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pboProducto)).EndInit();
             this.pnlFondo.ResumeLayout(false);
             this.pnlFondo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +280,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

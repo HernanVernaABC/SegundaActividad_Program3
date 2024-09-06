@@ -18,7 +18,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("Select Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio from Articulos");
+                datos.setearConsulta("SELECT A.Id, A.Precio, A.IdCategoria, A.IdMarca, A.Codigo, A.Nombre, A.Descripcion, C.Descripcion AS DesCategoria, M.Descripcion AS DesMarca FROM ARTICULOS A JOIN CATEGORIAS C ON A.IdCategoria = C.Id JOIN MARCAS M ON A.IdMarca = M.Id;");
                 datos.EjecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -29,33 +29,13 @@ namespace negocio
                     aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.IdCategoria = (int)datos.Lector["IdCategoria"];
                     aux.IdMarca = (int)datos.Lector["IdMarca"];
+                    aux.Categoria = new Categoria();
+                    aux.Categoria.Descripcion = (string)datos.Lector["DesCategoria"];
+                    aux.Marca = new Marca();
+                    aux.Marca.Descripcion = (string)datos.Lector["DesMarca"];
                     articulos.Add(aux);
                 }
 
-                CategoriaNegocio auxCategoria = new CategoriaNegocio();
-                List<Categoria> categorias = auxCategoria.listar();
-
-                NegocioMarca auxMarca = new NegocioMarca();
-                List<Marca> marcas = auxMarca.listar();
-
-                foreach (Articulo aux in articulos)
-                {
-                    foreach(Categoria auxCat in categorias)
-                    {
-                        if(aux.IdCategoria == auxCat.IdCategoria)
-                        {
-                            aux.Categoria = auxCat;
-                        }
-                    }
-
-                    foreach (Marca auxMarc in marcas)
-                    {
-                        if (aux.IdMarca == auxMarc.idMarca)
-                        {
-                            aux.Marca = auxMarc;
-                        }
-                    }
-                }
 
                 return articulos;
             }
