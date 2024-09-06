@@ -34,23 +34,26 @@
             this.btnMostrarTodo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pnlFondo = new System.Windows.Forms.Panel();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.txbIngresarCodigo = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.lblIdMarca = new System.Windows.Forms.Label();
-            this.lblIdCateogria = new System.Windows.Forms.Label();
-            this.txbIngresarNombre = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pbxUrlImagen = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbIngresarNombre = new System.Windows.Forms.TextBox();
+            this.lblIdCateogria = new System.Windows.Forms.Label();
+            this.lblIdMarca = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txbIngresarCodigo = new System.Windows.Forms.TextBox();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.lblUrl = new System.Windows.Forms.Label();
+            this.txbUrlImagen = new System.Windows.Forms.TextBox();
+            this.btnUrlCheck = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProducto)).BeginInit();
             this.pnlFondo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUrlImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // lblContenidoDB
@@ -107,7 +110,10 @@
             // pnlFondo
             // 
             this.pnlFondo.BackColor = System.Drawing.Color.DarkCyan;
-            this.pnlFondo.Controls.Add(this.pictureBox1);
+            this.pnlFondo.Controls.Add(this.btnUrlCheck);
+            this.pnlFondo.Controls.Add(this.txbUrlImagen);
+            this.pnlFondo.Controls.Add(this.lblUrl);
+            this.pnlFondo.Controls.Add(this.pbxUrlImagen);
             this.pnlFondo.Controls.Add(this.textBox4);
             this.pnlFondo.Controls.Add(this.textBox3);
             this.pnlFondo.Controls.Add(this.textBox2);
@@ -125,62 +131,49 @@
             this.pnlFondo.Size = new System.Drawing.Size(593, 219);
             this.pnlFondo.TabIndex = 6;
             // 
-            // lblCodigo
+            // pbxUrlImagen
             // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.BackColor = System.Drawing.Color.DarkGray;
-            this.lblCodigo.Location = new System.Drawing.Point(17, 18);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(57, 16);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Codigo: ";
+            this.pbxUrlImagen.Location = new System.Drawing.Point(341, 47);
+            this.pbxUrlImagen.Name = "pbxUrlImagen";
+            this.pbxUrlImagen.Size = new System.Drawing.Size(203, 147);
+            this.pbxUrlImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxUrlImagen.TabIndex = 12;
+            this.pbxUrlImagen.TabStop = false;
             // 
-            // txbIngresarCodigo
+            // textBox4
             // 
-            this.txbIngresarCodigo.Location = new System.Drawing.Point(116, 15);
-            this.txbIngresarCodigo.Name = "txbIngresarCodigo";
-            this.txbIngresarCodigo.Size = new System.Drawing.Size(120, 22);
-            this.txbIngresarCodigo.TabIndex = 1;
+            this.textBox4.Location = new System.Drawing.Point(116, 175);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(120, 22);
+            this.textBox4.TabIndex = 11;
             // 
-            // lblNombre
+            // textBox3
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.DarkGray;
-            this.lblNombre.Location = new System.Drawing.Point(17, 50);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre:";
+            this.textBox3.Location = new System.Drawing.Point(116, 142);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(120, 22);
+            this.textBox3.TabIndex = 10;
             // 
-            // lblPrecio
+            // textBox2
             // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.BackColor = System.Drawing.Color.DarkGray;
-            this.lblPrecio.Location = new System.Drawing.Point(17, 178);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(52, 16);
-            this.lblPrecio.TabIndex = 3;
-            this.lblPrecio.Text = "Precio: ";
+            this.textBox2.Location = new System.Drawing.Point(116, 111);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(120, 22);
+            this.textBox2.TabIndex = 9;
             // 
-            // lblDescripcion
+            // textBox1
             // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.BackColor = System.Drawing.Color.DarkGray;
-            this.lblDescripcion.Location = new System.Drawing.Point(17, 81);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(79, 16);
-            this.lblDescripcion.TabIndex = 4;
-            this.lblDescripcion.Text = "Descripcion";
+            this.textBox1.Location = new System.Drawing.Point(116, 78);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 22);
+            this.textBox1.TabIndex = 8;
             // 
-            // lblIdMarca
+            // txbIngresarNombre
             // 
-            this.lblIdMarca.AutoSize = true;
-            this.lblIdMarca.BackColor = System.Drawing.Color.DarkGray;
-            this.lblIdMarca.Location = new System.Drawing.Point(17, 114);
-            this.lblIdMarca.Name = "lblIdMarca";
-            this.lblIdMarca.Size = new System.Drawing.Size(62, 16);
-            this.lblIdMarca.TabIndex = 5;
-            this.lblIdMarca.Text = "Id Marca:";
+            this.txbIngresarNombre.Location = new System.Drawing.Point(116, 44);
+            this.txbIngresarNombre.Name = "txbIngresarNombre";
+            this.txbIngresarNombre.Size = new System.Drawing.Size(120, 22);
+            this.txbIngresarNombre.TabIndex = 7;
             // 
             // lblIdCateogria
             // 
@@ -193,48 +186,89 @@
             this.lblIdCateogria.TabIndex = 6;
             this.lblIdCateogria.Text = "Id Categoria:";
             // 
-            // txbIngresarNombre
+            // lblIdMarca
             // 
-            this.txbIngresarNombre.Location = new System.Drawing.Point(116, 44);
-            this.txbIngresarNombre.Name = "txbIngresarNombre";
-            this.txbIngresarNombre.Size = new System.Drawing.Size(120, 22);
-            this.txbIngresarNombre.TabIndex = 7;
+            this.lblIdMarca.AutoSize = true;
+            this.lblIdMarca.BackColor = System.Drawing.Color.DarkGray;
+            this.lblIdMarca.Location = new System.Drawing.Point(17, 114);
+            this.lblIdMarca.Name = "lblIdMarca";
+            this.lblIdMarca.Size = new System.Drawing.Size(62, 16);
+            this.lblIdMarca.TabIndex = 5;
+            this.lblIdMarca.Text = "Id Marca:";
             // 
-            // textBox1
+            // lblDescripcion
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 22);
-            this.textBox1.TabIndex = 8;
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.BackColor = System.Drawing.Color.DarkGray;
+            this.lblDescripcion.Location = new System.Drawing.Point(17, 81);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(79, 16);
+            this.lblDescripcion.TabIndex = 4;
+            this.lblDescripcion.Text = "Descripcion";
             // 
-            // textBox2
+            // lblPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 22);
-            this.textBox2.TabIndex = 9;
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.BackColor = System.Drawing.Color.DarkGray;
+            this.lblPrecio.Location = new System.Drawing.Point(17, 178);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(52, 16);
+            this.lblPrecio.TabIndex = 3;
+            this.lblPrecio.Text = "Precio: ";
             // 
-            // textBox3
+            // lblNombre
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 22);
-            this.textBox3.TabIndex = 10;
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.DarkGray;
+            this.lblNombre.Location = new System.Drawing.Point(17, 50);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Nombre:";
             // 
-            // textBox4
+            // txbIngresarCodigo
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 175);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 22);
-            this.textBox4.TabIndex = 11;
+            this.txbIngresarCodigo.Location = new System.Drawing.Point(116, 15);
+            this.txbIngresarCodigo.Name = "txbIngresarCodigo";
+            this.txbIngresarCodigo.Size = new System.Drawing.Size(120, 22);
+            this.txbIngresarCodigo.TabIndex = 1;
             // 
-            // pictureBox1
+            // lblCodigo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(334, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 136);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.BackColor = System.Drawing.Color.DarkGray;
+            this.lblCodigo.Location = new System.Drawing.Point(17, 18);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(57, 16);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Codigo: ";
+            // 
+            // lblUrl
+            // 
+            this.lblUrl.AutoSize = true;
+            this.lblUrl.BackColor = System.Drawing.Color.DarkGray;
+            this.lblUrl.Location = new System.Drawing.Point(254, 18);
+            this.lblUrl.Name = "lblUrl";
+            this.lblUrl.Size = new System.Drawing.Size(75, 16);
+            this.lblUrl.TabIndex = 13;
+            this.lblUrl.Text = "Url Imagen:";
+            // 
+            // txbUrlImagen
+            // 
+            this.txbUrlImagen.Location = new System.Drawing.Point(341, 15);
+            this.txbUrlImagen.Name = "txbUrlImagen";
+            this.txbUrlImagen.Size = new System.Drawing.Size(203, 22);
+            this.txbUrlImagen.TabIndex = 14;
+            // 
+            // btnUrlCheck
+            // 
+            this.btnUrlCheck.Location = new System.Drawing.Point(257, 53);
+            this.btnUrlCheck.Name = "btnUrlCheck";
+            this.btnUrlCheck.Size = new System.Drawing.Size(72, 47);
+            this.btnUrlCheck.TabIndex = 15;
+            this.btnUrlCheck.Text = "URL Check";
+            this.btnUrlCheck.UseVisualStyleBackColor = true;
+            this.btnUrlCheck.Click += new System.EventHandler(this.btnUrlCheck_Click);
             // 
             // VentanaDB
             // 
@@ -256,7 +290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxProducto)).EndInit();
             this.pnlFondo.ResumeLayout(false);
             this.pnlFondo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUrlImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,6 +316,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxUrlImagen;
+        private System.Windows.Forms.TextBox txbUrlImagen;
+        private System.Windows.Forms.Label lblUrl;
+        private System.Windows.Forms.Button btnUrlCheck;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,7 @@ namespace SegundaActividad
             dgvArticulos.DataSource = Articulos;
             dgvArticulos.Columns["IdCategoria"].Visible = false;
             dgvArticulos.Columns["IdMarca"].Visible = false;
+            dgvArticulos.Columns["UrlImagen"].Visible = false;
         }
 
         private void btnAgregarArticulo_Click(object sender, EventArgs e)
@@ -56,6 +58,24 @@ namespace SegundaActividad
             {
                 pbxProducto.Load("https://plus.unsplash.com/premium_photo-1682310093719-443b6fe140e8?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
             }
+        }
+
+        private void btnUrlCheck_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string urlImagen = txbUrlImagen.Text;
+                pbxUrlImagen.Load(urlImagen);
+            }
+            catch (Exception)
+            {
+
+                pbxUrlImagen.Load("https://plus.unsplash.com/premium_photo-1682310093719-443b6fe140e8?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+            }
+
+
+
         }
     }
 }
